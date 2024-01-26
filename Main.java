@@ -1,20 +1,14 @@
-package n1exercici1;
+package n1exercici2;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		InstrumentoViento flauta = new InstrumentoViento("Flauta", 50.00);
-
-        InstrumentoCuerda Guitarra = new InstrumentoCuerda("Guitarra", 120.00);
-
-        InstrumentoPercursion bateria = new InstrumentoPercursion("bateria", 250.00);
-
-
-    System.out.println(flauta.tocar());
-    System.out.println(Guitarra.tocar());
-    System.out.println(bateria.tocar());
+		Smartphone miSmartphone = new Smartphone("Apple","Iphone10");
+		miSmartphone.llamar("662933650");
+		miSmartphone.fotografiar();
+		miSmartphone.alarma();
 
 	}
 
