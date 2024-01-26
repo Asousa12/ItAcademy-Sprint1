@@ -1,0 +1,2 @@
+Archivo: (F) FicheroTXT.java Tue Jan 23 16:28:13 CET 2024
+Archivo: (F) Main.java Tue Jan 23 16:07:59 CET 2024
