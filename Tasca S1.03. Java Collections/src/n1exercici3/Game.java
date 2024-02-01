@@ -48,10 +48,8 @@ public class Game {
         FileReader fileReader = null;
         BufferedReader readPerfection = null;
 
-        try 
+        try (fileReader = new FileReader("countries.txt")
         {
-
-        	fileReader = new FileReader("C:\\Andreia\\countries.txt");
             readPerfection = new BufferedReader(fileReader);
             String line = "";
 
@@ -78,11 +76,10 @@ public class Game {
 
     public void savePuntos(String name, int score){
 
-            File file = new File("C:\\Andreia\\clasificacio.txt");
-            FileWriter fileWriter = null;
-            try 
+            File file = new File("clasificacio.txt");
+            try (FileWriter fileWriter = new FileWriter(file, true))
             { 
-                fileWriter = new FileWriter(file, true);
+                
                 fileWriter.write(name + " " + score + "\n");
                 fileWriter.close();  
             } 
