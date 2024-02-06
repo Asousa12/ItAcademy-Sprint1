@@ -5,12 +5,12 @@ import java.io.*;
 
 public class Game {
 
-    Scanner entrada = new Scanner(System.in);
-    HashMap<String, String> paises = new HashMap<>();
-    String capitales;
-    String name;
-    String respuesta;
-    int score;
+   private  Scanner entrada = new Scanner(System.in);
+   private HashMap<String, String> paises = new HashMap<>();
+   private  String capitales;
+   private String name;
+   private String respuesta;
+   private int score;
 
     public void Programa() {
 
