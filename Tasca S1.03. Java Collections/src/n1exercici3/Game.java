@@ -64,7 +64,6 @@ public class Game {
 	                }
             }
             
-            readPerfection.close();
         }
         catch (IOException e) {
 
