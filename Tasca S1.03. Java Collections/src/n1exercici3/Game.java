@@ -80,7 +80,6 @@ public class Game {
             { 
                 
                 fileWriter.write(name + " " + score + "\n");
-                fileWriter.close();  
             } 
             catch (IOException e) 
             { 
