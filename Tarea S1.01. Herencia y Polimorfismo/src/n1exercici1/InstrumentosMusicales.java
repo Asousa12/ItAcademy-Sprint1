@@ -2,8 +2,8 @@ package n1exercici1;
 
 public abstract class InstrumentosMusicales {
 
-    protected String nombre="";
-    protected double precio=0.0;
+    protected String nombre;
+    protected double precio;
 
 
     public InstrumentosMusicales(String nombre, double precio) {
