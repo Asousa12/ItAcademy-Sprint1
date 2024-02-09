@@ -12,25 +12,28 @@ import org.junit.jupiter.params.provider.MethodSource;
 public class CalculoDniTest {
 	
 	
-	@Test
-	    public void testCalcularLetra() {
-	       
-	        int[] numerosDni = {12345678, 12345679, 12345680, 12345681, 12345682, 12345683, 12345684, 12345685, 12345686, 12345687};
-	        char[] letrasEsperadas = {'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'};
-
-	    
-	        for (int i = 0; i < numerosDni.length; i++) {
-	       
-	            char letraEsperada = letrasEsperadas[i];
-	           
-	            char letraReal = CalculoDni.calcularLetra(numerosDni[i]);
-	            assertEquals(letraEsperada, letraReal);
-	        }
-	
-	    }
-	
-	
+	@ParameterizedTest
+	@CsvSource({
+	    "12345678,Z",
+	    "12345679,S",
+	    "12345680,Q",
+	    "12345681,V",
+	    "12345682,H",
+	    "12345683,L",
+	    "12345684,C",
+	    "12345685,K",
+	    "12345686,E",
+	    "12345687,T"
+	})
+	public void testCalcularLetra(int numeroDni, char letraEsperada) {
+	    char letraCalculada = CalculoDni.calcularLetra(numeroDni);
+	    assertEquals(letraEsperada, letraCalculada);
+	}
  }
+
+	
+	
+
 
 
 
